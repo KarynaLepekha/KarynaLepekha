@@ -2,12 +2,13 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.MainPage;
 
 public class RozetkaTest extends BaseTest{
 
-    @Test
+    @Test(description = "Verify screen diagonal is selected correctly")
     public void checkBox(){
-        double screenDiagonal = 5.01;
+        double screenDiagonal = 7.2;
         double maxValue;
         double minValue;
         String actualDiagonalValue = mainPage.
